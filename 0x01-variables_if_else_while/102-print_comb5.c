@@ -20,27 +20,18 @@ int main(void)
 	for (i = 0; i < 10; i++)
 	{
 		for (j = 0; j < 9; j++)
-		{
 			for (k = 0; k < 10; k++)
-			{
 				for (l = 0; l < 10; l++)
-				{
-					if (i < j && j < k && k < l && i < l)
+					if (j < l && i <= k)
 					{
 						putchar(i + '0');
 						putchar(j + '0');
 						putchar(' ');
 						putchar(k + '0');
 						putchar(l + '0');
-						if (j < 8)
-						{
-							putchar(',');
-							putchar(' ');
-						}
+						putchar(',');
+						putchar(' ');
 					}
-				}
-			}
-		}
 	}
 	putchar('\n');
 	return (0);
