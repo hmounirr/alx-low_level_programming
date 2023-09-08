@@ -25,13 +25,19 @@ int main(void)
 			{
 				for (l = 0; l < 10; l++)
 				{
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(' ');
-					putchar(k + '0');
-					putchar(l + '0');
-					putchar(',');
-					putchar(' ');
+					if (i < j && j < k && k < l && i < l)
+					{
+						putchar(i + '0');
+						putchar(j + '0');
+						putchar(' ');
+						putchar(k + '0');
+						putchar(l + '0');
+						if (j < 8)
+						{
+							putchar(',');
+							putchar(' ');
+						}
+					}
 				}
 			}
 		}
