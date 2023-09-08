@@ -12,26 +12,24 @@ int main(void)
 {
 	int i = 0;
 	int j = 0;
-	int k = 0;
-	int l = 0;
 
 	/* my code goes here */
-
-	for (i = 0; i < 10; i++)
+	for (i = 0; i <= 98; i++)
 	{
-		for (j = 0; j < 9; j++)
-			for (k = 0; k < 10; k++)
-				for (l = 0; l < 10; l++)
-					if (j < l && i <= k)
-					{
-						putchar(i + '0');
-						putchar(j + '0');
-						putchar(' ');
-						putchar(k + '0');
-						putchar(l + '0');
-						putchar(',');
-						putchar(' ');
-					}
+		for (j = i + 1; j <= 99; j++)
+		{
+			putchar((i / 10) + '0');
+			putchar((i % 10) + '0');
+			putchar(' ');
+			putchar((j / 10) + '0');
+			putchar((j % 10) + '0');
+
+			if (i == 98 && j == 99)
+				continue;
+
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
