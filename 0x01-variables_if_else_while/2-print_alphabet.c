@@ -14,11 +14,12 @@ int main(void)
 
 	/* my code goes here */
 
-	while (i <= 26)
+	while (i < 26)
 	{
 		putchar(cara);
 		cara++;
 		i++;
 	}
+	putchar();
 	return (0);
 }
