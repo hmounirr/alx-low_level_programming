@@ -20,6 +20,6 @@ int main(void)
 		cara++;
 		i++;
 	}
-	putchar( );
+	putchar(' ');
 	return (0);
 }
