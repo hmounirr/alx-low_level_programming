@@ -13,7 +13,7 @@ int main(void)
 
 	/* my code goes here */
 
-	while (i < 10)
+	while (i <= 9)
 	{
 		putchar(i + '0');
 		putchar(',');
