@@ -11,12 +11,10 @@ int main(void)
 {
 	int i = 0;
 
-	i = char(i);
-
 	/* my code goes here */
-	while (i < '10')
+	while (i < 10)
 	{
-		putchar(i);
+		putchar(i + '0');
 		i++;
 	}
 	putchar('\n');
