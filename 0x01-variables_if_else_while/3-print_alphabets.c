@@ -23,7 +23,7 @@ int main(void)
 	cara = 'a';
 	i = 0;
 	cara = cara - 32;
-	while (i <= 26)
+	while (i < 26)
 	{
 		putchar(cara);
 		cara++;
