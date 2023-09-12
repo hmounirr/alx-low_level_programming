@@ -21,6 +21,6 @@ int main(void)
 			sum += i;
 		}
 	}
-	printf("the summ of all multiple of 3 or 5 is %d\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
