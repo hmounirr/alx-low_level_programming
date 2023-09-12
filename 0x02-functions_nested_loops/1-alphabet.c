@@ -19,5 +19,4 @@ void print_alphabet(void)
 		cara++;
 	}
 	_putchar('\n');
-	
 }
