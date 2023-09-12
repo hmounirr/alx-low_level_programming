@@ -19,21 +19,29 @@ void times_table(void)
 		{
 			if ((i * j) < 10)
 			{
-				_putchar((i * j) + '0');
-			}
-			if ((i * j) < 10 || (i * j) >= 10)
-			{
-				_putchar(',');
-				_putchar(' ');
 				if ((i + 1) * j < 10 || i * (j + 1) < 10)
 				{
+					_putchar((i * j) + '0');
+					_putchar(',');
+					_putchar(' ');
 					_putchar(' ');
 				}
 			}
-			if ((i * j) >= 10)
+			else if ((i * j) < 10)
+			{
+				if ((i + 1) * j > 10 || i * (j + 1) > 10)
+				{
+					_putchar((i * j) + '0');
+					_putchar(',');
+					_putchar(' ');
+				}
+			}
+			else
 			{
 				_putchar((i * j) / 10 + '0');
 				_putchar((i * j) % 10 + '0');
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 		_putchar('\n');
