@@ -3,10 +3,10 @@
 /**
  * print_alphabet - Prints the alphabet in lowercase
  *
- * Return: Always 0.
+ * No Return:0.
  */
 
-int print_alphabet(void)
+void print_alphabet(void)
 {
 	int i = 0;
 	char cara = 'a';
@@ -19,5 +19,5 @@ int print_alphabet(void)
 		cara++;
 	}
 	_putchar('\n');
-	return (0);
+	
 }
