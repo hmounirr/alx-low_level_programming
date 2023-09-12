@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main - Prints the alphabet in lowercase
+ * print_alphabet - Prints the alphabet in lowercase
  *
  * Return: Always 0.
  */
 
-int main(void)
+int print_alphabet(void)
 {
 	int i = 0;
 	char cara = 'a';
