@@ -10,12 +10,9 @@
 
 int _abs(int r)
 {
-	int n;
-
-	n = print_sign(r);
-	if (n == 1)
+	if (r > 0)
 		return (r);
-	else if (n == 0)
+	else if (r == 0)
 		return (r);
 	else
 	{
