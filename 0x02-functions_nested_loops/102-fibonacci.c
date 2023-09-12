@@ -14,7 +14,7 @@ int main(void)
 
 	/* my code goes here */
 	printf("%ld, %ld, ", U1, U2);
-	for (i = ; i <= 50; i++)
+	for (i = 1; i <= 50; i++)
 	{
 
 		Un = U1 + U2;
