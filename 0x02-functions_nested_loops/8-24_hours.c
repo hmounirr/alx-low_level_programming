@@ -3,7 +3,7 @@
 /**
  * jack_bauer - a Function that prints Jack Bauer's every minute
  *             of his day
- * Return: Always 0.
+ * Return: NULL.
  */
 
 void jack_bauer(void)
@@ -30,5 +30,4 @@ void jack_bauer(void)
 			else
 				_putchar(j + '0');
 		}
-	return (0);
 }
