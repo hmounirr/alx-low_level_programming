@@ -20,7 +20,10 @@ void jack_bauer(void)
 				_putchar(i + '0');
 			}
 			else if (i >= 10 && i <= 23)
-				_putchar(i);
+			{
+				_putchar(i / 10 + '0');
+				_putchar(i % 10 + '0');
+			}
 			_putchar(':');
 			if (j >= 0 && j < 10)
 			{
@@ -28,7 +31,10 @@ void jack_bauer(void)
 				_putchar(j + '0');
 			}
 			else if (j >= 10 && j <= 59)
-				_putchar(j);
+			{
+				_putchar(j / 10 + '0');
+				_putchar(j % 10 + '0');
+			}
 			_putchar('\n');
 		}
 }
