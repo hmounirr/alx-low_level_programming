@@ -5,16 +5,14 @@
  * _abs - Return the absolute value of an integer
  * @r: argument typed by the user
  *
- * Return - the absolute value of an integer
+ * Return: the absolute value of an integer
  */
 
 int _abs(int r)
 {
-	if (r > 0)
+	if (r >= 0)
 		return (r);
-	else if (r == 0)
-		return (r);
-	else
+	else if (r < 0)
 	{
 		r = abs(r);
 		return (r);
