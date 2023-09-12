@@ -7,19 +7,20 @@
  */
 int main(void)
 {
-	int Un;
+	long int Un;
 	int i;
-	int U1 = 1;
-	int U2 = 2;
+	long int U1 = 1;
+	long int U2 = 2;
 
 	/* my code goes here */
 	printf("%d, %d, ", U1, U2);
-	for (i = 0; i <= 50; i++)
+	for (i = ; i <= 50; i++)
 	{
+
 		Un = U1 + U2;
 		U1 = U2;
 		U2 = Un;
-		printf(", %d", Un);
+		printf(", %ld", Un);
 	}
 	printf("\n");
 	return (0);
