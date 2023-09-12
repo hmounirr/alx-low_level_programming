@@ -13,7 +13,7 @@ int main(void)
 	long int U2 = 2;
 
 	/* my code goes here */
-	printf("%d, %d, ", U1, U2);
+	printf("%ld, %ld, ", U1, U2);
 	for (i = ; i <= 50; i++)
 	{
 
