@@ -2,14 +2,15 @@
 
 /**
  * print_diagonal - Prints a diagonal on the terminal
- * @n: number of times the character '\' should be printed
+ * @n: number of times the character should be printed
  *
  * Return: NO return 
  */
 
 void print_diagonal(int n)
 {
-	int i, j;
+	int i;
+	int j;
 
 	if (n <= 0)
 		_putchar('\n');
