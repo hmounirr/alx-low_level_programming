@@ -4,7 +4,7 @@
  * print_diagonal - Prints a diagonal on the terminal
  * @n: number of times the character should be printed
  *
- * Return: NO return 
+ * Return: No return.
  */
 
 void print_diagonal(int n)
