@@ -14,7 +14,7 @@ void _puts(char *str)
 
 	while (str[i] != '\0')
 	{
-		fprintf(stdout,"%c", str[i]);
+		fprintf(stdout,"%c", *str[i]);
 		i++;
 	}
 	fprintf(stdout,"\n");
