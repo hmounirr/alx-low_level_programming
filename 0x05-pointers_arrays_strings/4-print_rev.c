@@ -13,15 +13,16 @@ void print_rev(char *s)
 	int i;
 	int length = strlen(s);
 
-	/*for (i = strlen(s) - 1; i >= 0; i--)
-		for (j = 0; j < i; j++)
-		{
-			temp = s[j + 1];
-			s[j + 1] = s[j];
-			s[j] = temp;
-		}
-		*/
-	for (i = length - 1; i >= 0; i--)
+	/*
+	 * for (i = strlen(s) - 1; i >= 0; i--)
+	 * for (j = 0; j < i; j++)
+	 * {
+	 * temp = s[j + 1];
+	 * s[j + 1] = s[j];
+	 * s[j] = temp;
+	 * }
+	*/
+	for (i = length - 1;i >= 0; i--)
 		_putchar(s[i]);
 	_putchar('\n');
 }
