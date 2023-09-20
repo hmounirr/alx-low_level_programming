@@ -13,26 +13,18 @@ int _atoi(char *s)
     int result = 0;
     int sign = 1;
 
-    while (s[i] == ' ' || s[i] == '\t')
+    for (i = 0; s[i] != '\0'; i++)
     {
-        i++;
+	    if (s[i] == '-')
+		    sign = -1;
+	    if (s[i] >= '0' && s[i] <= '9')
+		    break;
     }
 
-    if (s[i] == '-')
+    while (s[i] >= '1' && s[i] <= '9')
     {
-        sign = -1;
-        i++;
+	    result = result * 10 + (s[i] - '0');
+	    i++;
     }
-    else if (s[i] == '+')
-    {
-        i++;
-    }
-
-    while (s[i] >= '0' && s[i] <= '9')
-    {
-        result = result * 10 + (s[i] - '0');
-        i++;
-    }
-
-    return (result * sign);
+    return (sign * result);
 }
