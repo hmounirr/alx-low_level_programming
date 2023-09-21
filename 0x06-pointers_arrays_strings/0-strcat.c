@@ -5,7 +5,7 @@
  * @dest: pointer that points at the dest string
  * @src: pointer that points at the source string
  *
- * Return: the adress of pointer dest
+ * Return: the adress of pointer dest.
  */
 char *_strcat(char *dest, char *src)
 {
@@ -22,8 +22,8 @@ char *_strcat(char *dest, char *src)
 	while (src[j] != '\0')
 	{
 		dest[i] = src[j];
-		i++;
 		j++;
+		i++;
 	}
 	dest[i] = '\0';
 	
