@@ -18,12 +18,12 @@ char *_strcat(char *dest, char *src)
 	{
 		i++;
 	}
-	dest[i] = ' ';
-	i++;
+	
 	while (src[j] != '\0')
 	{
-		dest[i] = src[j];
+		dest[i] = ' ';
 		i++;
+		dest[i] = src[j]
 		j++;
 	}
 	return (dest);
