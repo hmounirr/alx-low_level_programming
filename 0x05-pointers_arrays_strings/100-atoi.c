@@ -1,4 +1,5 @@
 #include "main.h"
+#include <math.h>
 
 /**
  * _atoi - function that have a string as a parameter
@@ -11,12 +12,13 @@ int _atoi(char *s)
 {
     int i = 0;
     int result = 0;
-    int sign = 1;
+    int sign = 0;
 
     for (i = 0; s[i] != '\0'; i++)
     {
 	    if (s[i] == '-')
-		    sign = -1;
+		    sign++;
+
 	    if (s[i] >= '0' && s[i] <= '9')
 		    break;
     }
@@ -26,5 +28,6 @@ int _atoi(char *s)
 	    result = result * 10 + (s[i] - '0');
 	    i++;
     }
+    sign = pow(-1,sign);
     return (sign * result);
 }
