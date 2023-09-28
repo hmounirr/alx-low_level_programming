@@ -22,7 +22,6 @@ int _atoi(char *s)
 		digit = digit * 10 + (s[i] - '0');
 		i++;
 	}
-	digit *= sign;
 
-	return (digit);
+	return (digit * sign);
 }
