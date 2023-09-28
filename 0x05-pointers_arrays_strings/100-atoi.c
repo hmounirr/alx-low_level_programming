@@ -3,15 +3,14 @@
 /**
  * _atoi - function that have a string as a parameter
  *         and search for digits init
- * %s: pointer that points at our string
+ * @s:pointer that points at our string
  *
  * Return: the value of the integer found in the string
  */
 int _atoi(char *s)
 {
 	int i = 0;
-	int digit = 0;
-	int sign = 1;
+	unsigned int digit = 0, sign = 1;
 
 	while (s[i] < '0' || s[i] > '9')
 	{
@@ -24,6 +23,8 @@ int _atoi(char *s)
 		digit = digit * 10 + (s[i] - '0');
 		i++;
 	}
+	if (digit == 0)
+		return (0);
 
-	return (digit*sign);
+	return (digit * sign);
 }
