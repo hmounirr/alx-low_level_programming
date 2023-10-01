@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <math.h>
 /**
  * heron_sqrt - returns the natural square root of a number.
  * @n: input number.
