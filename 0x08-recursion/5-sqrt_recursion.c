@@ -11,7 +11,7 @@ int heron_sqrt(int n, double close)
 {
     double next_num = 0.5 * (close + n / close);
 
-    if (fabs(next_num - close) < 1e-5)
+    if ((next_num - close) < 1e-5)
     {
         int new_num = (int)next_num;
         if (new_num * new_num == n)
