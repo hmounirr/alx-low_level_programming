@@ -1,4 +1,6 @@
+#include <stdlib.h>
 #include "main.h"
+
 /**
  * malloc_checked - Function that allocates memory using malloc
  * @b : pointer of type unsigned integer
@@ -6,8 +8,12 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	b = malloc(sizeof(unsigned int));
+	void *p;
 
-	if (b == NULL)
-		return (98);
+	p = malloc(b);
+
+	if (p == NULL)
+		exit(98);
+
+	return (p);
 }
